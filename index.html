@@ -158,6 +158,18 @@
         right: 94px;
         border: 1px solid white;
     }
+
+    .container-circle{
+      position: absolute; 
+      top: 50%; left: 50%; 
+      transform: translate(-50%, -50%); 
+      border-style: dashed; 
+      height: 92px; width: 92px; 
+      border-color: white; 
+      border-radius: 50%; 
+      border-width: 2px;
+      background-color: #ffffff30;
+    }
     </style>
   </head>
   <body>
@@ -196,8 +208,8 @@
                               <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/mp4">
                           </video>
                           <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); border-radius: 10px;">
-                            <div id="the1" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 92px; height: 92px;">
-                              <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-style: dashed; height: 92px; width: 92px; border-color: white; border-radius: 50%; border-width: 2px;"></div>
+                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 92px; height: 92px;">
+                              <div class="container-circle"></div>
                               <button type="button" class="btn btn-play" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></button>
                           </div>
                           </div>
